@@ -42,12 +42,15 @@ use 'tpope/vim-fugitive'
 
 use 'tpope/vim-commentary'
 
-use 'alvan/vim-closetag' 
-
 use 'feline-nvim/feline.nvim'
 
 use 'kyazdani42/nvim-web-devicons'
 
 use 'windwp/nvim-ts-autotag'
+
+use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+}
 end)
 

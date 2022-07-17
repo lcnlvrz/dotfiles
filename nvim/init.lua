@@ -1,4 +1,3 @@
-
 vim.g.mapleader = " "
 
 vim.o.number = true
@@ -16,5 +15,9 @@ vim.o.background = "dark"
 vim.cmd([[
 colorscheme gruvbox
 ]])
+
+vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
+
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
 
 require "plugins"
