@@ -1,3 +1,6 @@
+export PATH=$PATH:/usr/local/go/bin
+source /home/lcnlvrz/.gvm/scripts/gvm
+source ~/.nvm/nvm.sh
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -80,7 +83,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, zsh-autosuggestions)
+plugins=(git zsh-autosuggestions node golang mongocli vi-mode fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,3 +117,5 @@ alias g="git"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[[ -s "/home/lcnlvrz/.gvm/scripts/gvm" ]] && source "/home/lcnlvrz/.gvm/scripts/gvm"
